@@ -62,7 +62,7 @@
     <p class="en" lang="en">I Just Wanted to Be Loved · Writing Garden</p>
     <p class="line">여전히 꿈 앞에서 발악하는 중이야</p>
   </header>
-  <ul class="services">
+  <ul class="services two">
     <li><a href="https://www.melon.com/song/detail.htm?songId=603779911" data-song="사랑받고 싶어서" data-svc="melon"><img src="icons/melon.png" width="96" height="96" alt=""><span>멜론</span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li>
     <li><a href="https://music.youtube.com/watch?v=TUA_AdTtoUs" data-song="사랑받고 싶어서" data-svc="ytmusic"><img src="icons/ytmusic.png" width="96" height="96" alt=""><span>유튜브 뮤직</span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li>
     <li><a href="https://open.spotify.com/track/6R4d4Bd7xXbMU4EoPEUnag" data-song="사랑받고 싶어서" data-svc="spotify"><img src="icons/spotify.png" width="96" height="96" alt=""><span>스포티파이</span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li>
@@ -75,5 +75,11 @@
   <a class="more" href="songs/" data-song="전체 곡" data-svc="more"><span>다른 노래도 있어요</span><small>22곡</small><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>
   <p class="foot"><a href="https://www.instagram.com/writing_garden/">인스타그램</a></p>
 </main>
+<script>
+(function(){var u="https://script.google.com/macros/s/AKfycbxXgwTWXQAVk9_S0ZHItBD69lEdSjW2CxYJppSUsFh1gfeKCJckSIQ9CfpUcB3jgCyNGQ/exec";function s(o){try{navigator.sendBeacon(u,JSON.stringify(o))}catch(e){}}
+s({e:"view",p:location.pathname});
+document.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest("a[data-svc]");if(a)s({e:"click",p:location.pathname,song:a.dataset.song,svc:a.dataset.svc})});
+})();
+</script>
 </body>
 </html>
