@@ -30,8 +30,6 @@
   a { -webkit-tap-highlight-color: transparent; }
   a:focus-visible, summary:focus-visible { outline: 2px solid var(--glow); outline-offset: 2px; }
   svg { flex: none; width: 18px; height: 18px; stroke: var(--ink-3); }
-  .foot { margin: 22px 0 0; text-align: center; font-size: .875rem; }
-  .foot a { color: var(--ink-2); text-underline-offset: 3px; text-decoration-color: var(--ink-3); }
 
   .cover { display: block; width: min(68vw, 290px); height: auto; aspect-ratio: 1; margin: 0 auto 22px; border-radius: 14px; box-shadow: 0 14px 44px rgba(0, 0, 0, .5), 0 0 56px rgba(246, 217, 142, .17); }
   header { text-align: center; margin-bottom: 26px; }
@@ -40,17 +38,16 @@
   .en { margin: 9px 0 0; font-size: .8125rem; color: var(--ink-2); }
   .line { margin: 15px 0 0; font-size: .9375rem; color: var(--ink-2); }
   .services { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-  .services a, .more { display: flex; align-items: center; gap: 13px; min-height: 60px; padding: 10px 14px 10px 12px; border: 1px solid var(--line); border-radius: 13px; background: var(--row); color: inherit; text-decoration: none; font-size: 1.0625rem; font-weight: 600; transition: background-color .15s ease, border-color .15s ease; }
-  .services a:hover, .services a:active, .more:hover, .more:active { background: var(--row-hover); border-color: rgba(246, 217, 142, .45); }
+  .services a { display: flex; align-items: center; gap: 13px; min-height: 60px; padding: 10px 14px 10px 12px; border: 1px solid var(--line); border-radius: 13px; background: var(--row); color: inherit; text-decoration: none; font-size: 1.0625rem; font-weight: 600; transition: background-color .15s ease, border-color .15s ease; }
+  .services a:hover, .services a:active { background: var(--row-hover); border-color: rgba(246, 217, 142, .45); }
   .services img { width: 36px; height: 36px; flex: none; border-radius: 9px; background: #fff; }
   .services span { flex: 1; }
   .two { grid-template-columns: 1fr 1fr; }
   .two a { gap: 10px; min-height: 56px; padding: 9px 10px; font-size: .9375rem; }
   .two img { width: 32px; height: 32px; border-radius: 8px; }
   .two svg { display: none; }
-  .more { margin-top: 18px; padding-left: 16px; }
-  .more span { flex: 1; }
-  .more small { font-size: .875rem; font-weight: 500; color: var(--ink-2); }
+  .foot { margin: 14px 0 0; text-align: center; font-size: .875rem; }
+  .foot a { display: inline-block; padding: 10px 8px; color: var(--ink-2); text-underline-offset: 3px; text-decoration-color: var(--ink-3); }
 </style>
 </head>
 <body>
@@ -72,8 +69,7 @@
     <li><a href="https://vibe.naver.com/track/109133118" data-song="사랑받고 싶어서" data-svc="vibe"><img src="icons/vibe.png" width="96" height="96" alt=""><span>바이브</span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li>
     <li><a href="https://music.bugs.co.kr/track/34117264" data-song="사랑받고 싶어서" data-svc="bugs"><img src="icons/bugs.png" width="96" height="96" alt=""><span>벅스</span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li>
   </ul>
-  <a class="more" href="songs/" data-song="전체 곡" data-svc="more"><span>다른 노래도 있어요</span><small>22곡</small><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>
-  <p class="foot"><a href="https://www.instagram.com/writing_garden/">인스타그램</a></p>
+  <p class="foot"><a href="songs/" data-song="전체 곡" data-svc="more">다른 노래도 있어요</a></p>
 </main>
 <script>
 (function(){var u="https://script.google.com/macros/s/AKfycbxXgwTWXQAVk9_S0ZHItBD69lEdSjW2CxYJppSUsFh1gfeKCJckSIQ9CfpUcB3jgCyNGQ/exec";function s(o){try{navigator.sendBeacon(u,JSON.stringify(o))}catch(e){}}
