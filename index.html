@@ -72,9 +72,9 @@
   <p class="foot"><a href="songs/" data-song="전체 곡" data-svc="more">다른 노래도 있어요</a></p>
 </main>
 <script>
-(function(){if(location.hostname!=="garden-stone.github.io"||Date.now()<Date.parse("2026-11-06T00:00:00+09:00"))return;var u="https://script.google.com/macros/s/AKfycbxXgwTWXQAVk9_S0ZHItBD69lEdSjW2CxYJppSUsFh1gfeKCJckSIQ9CfpUcB3jgCyNGQ/exec";function s(o){try{navigator.sendBeacon(u,JSON.stringify(o))}catch(e){}}
-s({e:"view",p:location.pathname});
-document.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest("a[data-svc]");if(a)s({e:"click",p:location.pathname,song:a.dataset.song,svc:a.dataset.svc})});
+(function(){if(location.hostname!=="garden-stone.github.io"||Date.now()<Date.parse("2026-11-06T00:00:00+09:00"))return;var u="https://script.google.com/macros/s/AKfycbxXgwTWXQAVk9_S0ZHItBD69lEdSjW2CxYJppSUsFh1gfeKCJckSIQ9CfpUcB3jgCyNGQ/exec",p=location.pathname;if(p==="/"&&/[?&]utm_source=email(&|$)/.test(location.search))p="/email";function s(o){try{navigator.sendBeacon(u,JSON.stringify(o))}catch(e){}}
+s({e:"view",p:p});
+document.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest("a[data-svc]");if(a)s({e:"click",p:p,song:a.dataset.song,svc:a.dataset.svc})});
 })();
 </script>
 </body>
